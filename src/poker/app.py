@@ -5,4 +5,8 @@ Created on 11/1/2013
 '''
 
 def poker(hands):
-    "Return the best hand : poker([hand,...]) => hand"
+    "Return the best hand : poker([hand1,hand2,...]) => hand"
+    return max(hands, key=hand_rank)
+    
+def hand_rank(hand):
+    
